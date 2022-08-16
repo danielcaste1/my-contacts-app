@@ -1,0 +1,102 @@
+//colors
+$bg-main-color : #0E0D12;
+$bg-secondary-color : #333237;
+$text-main-color : #fff;
+$text-secondary-color : #9F9EA3;
+$app-main-color : #5858FE;
+$error : #F04B69;
+$error-soft : #FFF;
+$success : #29B95E;
+$success-soft : #FFF;
+
+
+//font-styles
+$main : 'Inter', sans-serif;;
+
+//font-sizes
+$xlg : 3.2rem;
+$lg : 3.2rem;
+$md : 2.4rem;
+$sm : 2rem;
+$xsm : 1.6rem;
+
+
+//font-weight
+$bold : 800;
+$semibold : 600;
+$regular : 400;
+
+
+@mixin shadows {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.547), inset 0px 4px 12px rgba(169, 169, 169, 0.152);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $bg-main-color;
+}
+
+.btn {
+    font-family: $main;
+    border: none;
+    font-size: $xlg;
+    padding: 1rem 2rem;
+    @include shadows();
+}
+
+.btn_main {
+    background-color: $app-main-color;
+    color: $text-main-color;
+}
+
+.btn_success {
+    background-color: $success;
+    color: $success-soft;
+}
+
+.btn_deny {
+    background-color: $error;
+    color: $error-soft;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square{
+    border-radius: 1.6rem;
+}
+
+.input {
+    max-height: 4rem;
+    font-family: $main;
+    border: none;
+    font-size: $xsm;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    outline: none;
+    font-weight: $semibold;
+    @include shadows();
+}
+
+.input-main {
+    background-color: $bg-secondary-color;
+    color: $text-secondary-color;
+}
+
+.input-secondary {
+    color: $text-secondary-color;
+    background-color: $text-main-color;
+}
+
+

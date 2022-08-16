@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0E0D12;
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  border: none;
+  font-size: 3.2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.547), inset 0px 4px 12px rgba(169, 169, 169, 0.152);
+}
+
+.btn_main {
+  background-color: #5858FE;
+  color: #fff;
+}
+
+.btn_success {
+  background-color: #29B95E;
+  color: #FFF;
+}
+
+.btn_deny {
+  background-color: #F04B69;
+  color: #FFF;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 1.6rem;
+}
+
+.input {
+  max-height: 4rem;
+  font-family: "Inter", sans-serif;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  outline: none;
+  font-weight: 600;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.547), inset 0px 4px 12px rgba(169, 169, 169, 0.152);
+}
+
+.input-main {
+  background-color: #333237;
+  color: #9F9EA3;
+}
+
+.input-secondary {
+  color: #9F9EA3;
+  background-color: #fff;
+}
+
+.app__title {
+  font-size: 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 3.6rem auto;
+  color: #fff;
+}
+
+.search__container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 0rem 2rem;
+  max-width: 360px;
+}
+.search__container input {
+  max-width: 20rem;
+  margin: auto 0;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact__card {
+  display: flex;
+  align-content: center;
+  margin: 1.5rem 2rem;
+  padding: 1.5rem;
+  background-color: #333237;
+  color: #9F9EA3;
+  border-radius: 1rem;
+  font-family: "Inter", sans-serif;
+}
+.contact__card .contact__image {
+  display: flex;
+  align-items: center;
+  max-width: 50px;
+}
+.contact__card .contact__image img {
+  width: 100%;
+}
+.contact__card .contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0rem 2rem;
+}
+.contact__card .contact__info--name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0.2rem 0;
+}
+.contact__card .contact__info--number {
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #9F9EA3;
+  margin: 0.2rem 0;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E0D12;
+}
+.modal-background .modal__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #333237;
+  align-items: center;
+  margin: 0 2rem;
+  border-radius: 1rem;
+  padding: 1rem 0rem;
+  width: 100%;
+  animation: appear 100ms;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.547), inset 0px 4px 12px rgba(169, 169, 169, 0.152);
+}
+@keyframes appear {
+  from {
+    transform: translate(100%, 0);
+  }
+}
+.modal-background .modal__card .modal__title {
+  font-size: 3.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin: 3rem auto;
+}
+.modal-background .modal__card .close-modal__button {
+  position: absolute;
+  right: -1.5rem;
+  top: -1.5rem;
+}
+.modal-background .modal__card .input {
+  margin: 1rem;
+  max-width: 23rem;
+}
+.modal-background .modal__card .create-contact_button {
+  margin: 1rem auto 2rem auto;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,38 @@
+.contact__card {
+    display: flex;
+    align-content: center;
+    margin: 1.5rem 2rem;
+    padding: 1.5rem;
+    background-color: $bg-secondary-color;
+    color: $text-secondary-color;
+    border-radius: 1rem;
+    font-family: $main;
+    .contact__image {
+        display: flex;
+        align-items: center;
+        max-width: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: $sm;
+        margin: 0rem 2rem;
+        &--name {
+            font-size: $sm;
+            font-weight: $semibold;
+            color: $text-main-color;
+            margin: .2rem 0;
+        }
+        &--number{
+            letter-spacing: .2rem;
+            font-size: $xsm;
+            font-weight: $regular;
+            color: $text-secondary-color;
+            margin: .2rem 0;
+        }
+    }
+}

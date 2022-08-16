@@ -1,0 +1,53 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $bg-main-color;
+
+    .modal__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: $bg-secondary-color;
+        align-items: center;
+        margin: 0 2rem;
+        border-radius: 1rem;
+        padding: 1rem 0rem;
+        width: 100%;
+        animation: appear 100ms;
+        @keyframes appear {
+            from { transform: translate(100%, 0)}
+        } 
+        @include shadows();
+        .modal__title {
+            font-size: $xlg;
+            font-family: $main;
+            font-weight: $semibold;
+            color: $text-main-color;
+            margin: 3rem auto;
+            
+        }
+        .close-modal__button{
+            position: absolute;
+            right: -1.5rem;
+            top: -1.5rem;
+
+        }
+        .input {
+            margin: 1rem ;
+            max-width: 23rem;
+        }
+        .create-contact_button{
+            margin: 1rem auto 2rem auto;
+            font-size: $sm;
+        }
+
+    }
+}
