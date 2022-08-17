@@ -49,9 +49,12 @@ body {
 .btn {
     font-family: $main;
     border: none;
-    font-size: $xlg;
+    font-size: $md;
     padding: 1rem 2rem;
-    @include shadows();
+    cursor: pointer;
+    &:hover{
+        @include shadows();
+    }
 }
 
 .btn_main {
@@ -70,6 +73,7 @@ body {
 }
 
 .circle {
+    padding: 1.3rem 2rem;
     border-radius: 50%;
 }
 

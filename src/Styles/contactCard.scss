@@ -7,6 +7,11 @@
     color: $text-secondary-color;
     border-radius: 1rem;
     font-family: $main;
+    
+    cursor: pointer;
+    &:hover {
+        @include shadows();
+    }
     .contact__image {
         display: flex;
         align-items: center;

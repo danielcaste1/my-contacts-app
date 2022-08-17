@@ -5,7 +5,7 @@ function Button ({className, shape, type, text, onClick}){
         <button 
         className={ `${className} btn btn_${type} ${shape}` } 
         type="button"
-        onClick={()=>{onClick()}}
+        onClick={onClick}
         >{text}</button>
     )
 }

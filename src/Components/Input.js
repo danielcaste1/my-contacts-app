@@ -1,14 +1,14 @@
 import React from "react";
 
-function TextInput({value, placeholder, type, onChange }){
+function Input({value, placeholder, type, category,onChange }){
     return(
-        <input type="text"
+        <input type= {type}
             value={value}
             placeholder= {placeholder}
-            className = {`input input-${type}`}
+            className = {`input input-${category}`}
             onChange={(event)=> {onChange(event.target.value)}}
         ></input>
     )
 }
 
-export { TextInput }
+export { Input }
