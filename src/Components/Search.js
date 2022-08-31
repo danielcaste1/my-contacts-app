@@ -1,26 +1,9 @@
-import React, { useContext } from "react";
-import { AppContext } from "../Context/AppContext";
-import { Input } from "./Input";
-import { Button } from "./Button"
+import React from "react";
 
-function Search(){
-    const { setSearchValue, openNewContactModal } = useContext(AppContext);
+function Search(props){
     return (
         <div className="search__container">
-            <Input
-                placeholder = "Search..."
-                onChange={(value)=> {
-                    setSearchValue(value);}}
-                type ="text"
-                category = "main"
-            ></Input>
-            <Button
-                className= "add-contact__button"
-                text = "+"
-                type= "main"
-                shape= "circle"
-                onClick={openNewContactModal}
-            ></Button>
+            {props.children}
         </div>
     )
 }

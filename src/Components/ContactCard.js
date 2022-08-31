@@ -7,7 +7,7 @@ function ContactCard({key_index,name, code, number, onClick}){
             onClick={()=>{
                 onClick(key_index);
             }}>
-            <div className="contact__image"><img src="./user.png"></img></div>
+            <div className="contact__image"><img src="./my-contacts-app/user.png"></img></div>
             <div className="contact__info">
                 <p className="contact__info--name"> { name } </p>
                 <p className="contact__info--number"> { code } { number } </p>
